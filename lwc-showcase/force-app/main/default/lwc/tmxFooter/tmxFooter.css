@@ -1,0 +1,147 @@
+.container {
+  position: relative;
+  height: 100%;
+}
+.page-footer {
+  background: #1b2935;
+  padding: 0;
+  margin-top:50px;
+}
+.footer_links {
+  border-top: 1px solid #5d7380;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #aabbc4;
+  vertical-align: middle;
+  line-height: 64px;
+  margin-top: 12px;
+}
+.wrapper {
+  position: relative;
+  max-width: 1426px;
+  margin: auto;
+  padding: 0 10px;
+}
+.logo {
+  float: left;
+  min-height: 64px;
+  line-height: 1;
+}
+.navigation {
+  margin: 0;
+  padding: 0 20px;
+  min-height: 64px;
+  text-align: right;
+  float: left;
+}
+.social_sidebar {
+  float: right;
+  text-align: right;
+}
+.legal {
+  color: #aabbc4;
+}
+.disclaimer {
+  font-size: 14px;
+  text-align: justify;
+}
+.copyright {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.page-footer .footer_links ul.navigation li {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 15px;
+  display: inline-block;
+  top: -2px;
+  position: relative;
+}
+.page-footer .footer_links ul.navigation li a {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.4;
+  vertical-align: middle;
+}
+.page-footer .footer_links a {
+  color: #aabbc4;
+  display: inline-block;
+}
+.page-footer .footer_links .logo a img {
+  display: block;
+  height: 64px;
+}
+.socialIcon {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  width: 0.9em;
+  margin-bottom: 5px;
+}
+.ico-facebook {
+  width: 0.7em;
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+.page-footer .footer_links .social_sidebar a {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  color: #1b2935;
+  background: #aabbc4;
+  text-align: center;
+  border-radius: 2px;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  font-size: 20px;
+  margin-left: 4px;
+}
+.page-footer .footer_links .social_sidebar a:hover {
+  background: white;
+}
+.page-footer .footer_links .social_sidebar a .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.page-footer .footer_links ul.navigation li:first-child {
+  margin-left: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+p:first-child {
+  margin-top: 0;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div {
+  display: block;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

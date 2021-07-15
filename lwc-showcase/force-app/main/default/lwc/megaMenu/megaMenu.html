@@ -1,0 +1,133 @@
+<template>
+  <nav class="main_nav">
+    <ul class="wrapperMenu" id="wrapperMenu">
+      <li class="level0">
+        <template if:true={isHomePage}>
+          <button class="homeTab" onclick={goToDashboard}>
+            DASHBOARD
+          </button></template
+        >
+        <template if:false={isHomePage}
+          ><button class="subnavbtn" onclick={goToDashboard}>
+            DASHBOARD
+          </button></template
+        >
+      </li>
+      <li class="level0">
+        <button class="subnavbtn">MY FIRM</button>
+        <lightning-icon
+          icon-name="utility:chevrondown"
+          size="x-small"
+        ></lightning-icon>
+        <div class="subnav-content">
+          <div class="slds-grid slds-gutters subMenuBoxStyle">
+            <div class="slds-col slds-size_1-of-3 subMenuHeader">
+              Firm Overview
+            </div>
+            <div class="slds-col slds-size_1-of-3"></div>
+            <div class="slds-col slds-size_1-of-3"></div>
+          </div>
+          <div class="slds-grid slds-gutters subMenuBoxStyle">
+            <div class="slds-col slds-size_1-of-3 subMenuBtn">
+              <a href="company-information">Profile & Contacts</a>
+            </div>
+            <div class="slds-col slds-size_1-of-3"></div>
+            <div class="slds-col slds-size_1-of-3"></div>
+          </div>
+        </div>
+      </li>
+      <template if:true={showEquities}>
+        <li class="level0">
+          <button class="subnavbtn">EQUITIES</button>
+          <lightning-icon
+            icon-name="utility:chevrondown"
+            size="x-small"
+          ></lightning-icon>
+          <div class="subnav-content">
+            <div class="slds-grid slds-gutters subMenuBoxStyle">
+              <div class="slds-col slds-size_1-of-3 subMenuHeader">
+                Trading Services
+              </div>
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+            </div>
+            <div class="slds-grid slds-gutters subMenuBoxStyle">
+              <div class="slds-col slds-size_1-of-3 subMenuBtn">
+                <a href="equities-order-entry-list-view-page">Order Entry</a>
+              </div>
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+            </div>
+            <div class="slds-grid slds-gutters subMenuBoxStyle">
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+            </div>
+          </div>
+        </li>
+      </template>
+      <template if:true={showTms}>
+        <li class="level0">
+          <button class="subnavbtn">DERIVATIVES</button>
+          <lightning-icon
+            icon-name="utility:chevrondown"
+            size="x-small"
+          ></lightning-icon>
+          <div class="subnav-content">
+            <div class="slds-grid slds-gutters subMenuBoxStyle">
+              <div class="slds-col slds-size_1-of-3 subMenuHeader">
+                Post-Trade Services
+              </div>
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+            </div>
+            <div class="slds-grid slds-gutters subMenuBoxStyle">
+              <div class="slds-col slds-size_1-of-3 subMenuBtn">
+                <a href="servicerequest">TMS</a>
+              </div>
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+            </div>
+            <div class="slds-grid slds-gutters subMenuBoxStyle">
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+              <div class="slds-col slds-size_1-of-3"></div>
+            </div>
+          </div>
+        </li>
+      </template>
+      <template if:true={showNetwork}>
+        <li class="level0">
+          <button class="subnavbtn">MY NETWORK</button>
+          <lightning-icon
+            icon-name="utility:chevrondown"
+            size="x-small"
+          ></lightning-icon>
+          <div class="subnav-content">
+            <div class="slds-grid slds-gutters subMenuBoxStyle">
+              <div
+                class="slds-col slds-size_1-of-3 subMenuBtn subMenuBtnTopBorder"
+              >
+                <a href="direct-access-connectivity">Direct Access</a>
+              </div>
+              <div
+                class="slds-col slds-size_1-of-3 subMenuBtn subMenuBtnTopBorder middleColMargin"
+              >
+                <a href="vpn-connectivity">VPN Access</a>
+              </div>
+              <div class="slds-col slds-size_1-of-3"></div>
+            </div>
+          </div>
+        </li>
+      </template>
+      <li class="level0">
+        <a class="subnavbtn" href="contact-us">CONTACT US</a>
+      </li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick={openMenu}>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+</template>
