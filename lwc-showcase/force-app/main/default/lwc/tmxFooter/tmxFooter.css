@@ -3,12 +3,12 @@
   height: 100%;
 }
 .page-footer {
-  background: #1b2935;
+  background: #F6C26C;
   padding: 0;
   margin-top:50px;
 }
 .footer_links {
-  border-top: solid #c8dbba;
+  border-top: solid #8F2404;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #aabbc4;
@@ -18,7 +18,7 @@
 }
 .wrapper {
   position: relative;
-  max-width: 1426px;
+  max-width: 1000px;
   margin: auto;
   padding: 0 10px;
 }
@@ -39,12 +39,9 @@
   text-align: right;
 }
 .legal {
-  color: #ffffff;
+  color: #8F2404;
 }
-.disclaimer {
-  font-size: 14px;
-  text-align: justify;
-}
+
 .copyright {
   text-align: center;
   font-size: 16px;
@@ -66,7 +63,7 @@
   vertical-align: middle;
 }
 .page-footer .footer_links a {
-  color: #ffffff;
+  color: #8F2404;
   display: inline-block;
 }
 .page-footer .footer_links .logo a img {
@@ -90,8 +87,8 @@
   width: 24px;
   height: 24px;
   line-height: 24px;
-  color: #1b2935;
-  background: #ffffff;
+  color: #F6C26C;
+  background: white;
   text-align: center;
   border-radius: 2px;
   vertical-align: middle;

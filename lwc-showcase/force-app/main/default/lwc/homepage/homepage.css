@@ -1,14 +1,14 @@
 .container{
     margin: auto;
-    background-color: #1b2935;
+    background-color: #F6C26C;
     max-height: 700px;
     padding:5%;
-    border: 1px solid #c8dbba;
+    /* border: 1px solid #8F2404; */
 }
 .innerContainer{
     margin: auto;
-    background-color: white;
-    color:black;
+    background-color: #F6C26C;
+    color:#8F2404;
     max-width: 1000px;
     max-height: 600px;
 }
@@ -30,9 +30,13 @@ padding-top: 70px;
 }
 
 img{
-    border-radius: 8px;
+    border-radius: 50%;    
     max-height: 400px;
     float: right;
     margin: 5%;
 }
 
+.disclaimer {
+    font-size: 16px;
+    text-align: justify;
+  }
