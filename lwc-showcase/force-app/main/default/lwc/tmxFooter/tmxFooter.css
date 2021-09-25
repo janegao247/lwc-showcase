@@ -8,7 +8,7 @@
   margin-top:50px;
 }
 .footer_links {
-  border-top: 1px solid #5d7380;
+  border-top: solid #c8dbba;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #aabbc4;
@@ -39,7 +39,7 @@
   text-align: right;
 }
 .legal {
-  color: #aabbc4;
+  color: #ffffff;
 }
 .disclaimer {
   font-size: 14px;
@@ -66,7 +66,7 @@
   vertical-align: middle;
 }
 .page-footer .footer_links a {
-  color: #aabbc4;
+  color: #ffffff;
   display: inline-block;
 }
 .page-footer .footer_links .logo a img {
@@ -91,7 +91,7 @@
   height: 24px;
   line-height: 24px;
   color: #1b2935;
-  background: #aabbc4;
+  background: #ffffff;
   text-align: center;
   border-radius: 2px;
   vertical-align: middle;

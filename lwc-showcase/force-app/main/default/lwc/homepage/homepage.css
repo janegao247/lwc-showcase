@@ -1,0 +1,38 @@
+.container{
+    margin: auto;
+    background-color: #1b2935;
+    max-height: 700px;
+    padding:5%;
+    border: 1px solid #c8dbba;
+}
+.innerContainer{
+    margin: auto;
+    background-color: white;
+    color:black;
+    max-width: 1000px;
+    max-height: 600px;
+}
+.greeting{
+font-size: 2em;
+
+}
+.contentWrapper{
+padding-top: 70px;
+}
+.name{
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 2em;
+}
+
+img{
+    border-radius: 8px;
+    max-height: 400px;
+    float: right;
+    margin: 5%;
+}
+
