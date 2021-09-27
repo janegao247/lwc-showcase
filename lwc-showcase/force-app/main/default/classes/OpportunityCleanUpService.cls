@@ -4,17 +4,15 @@ public with sharing class OpportunityCleanUpService {
     }
   
     public ServiceResult execute(List<Opportunity> Opportunities) {
-      List<Opportunity> OpportunitiesToDelete = new List<Opportunity>();
+      List<Opportunity> OpportunitiesToUpdate = new List<Opportunity>();
   
       for (Opportunity currentOpportunity : Opportunities) {
-
-        if (currentOpportunity.CloseDate < Date.today()) {
-            OpportunitiesToDelete.add(currentOpportunity);
-        }
+        currentOpportunity.StageName = OpportunityStages.CLOSED_LOST;
+        OpportunitiesToUpdate.add(currentOpportunity);
       }
   
       ServiceResult result = new ServiceResult();
-      result.ToDelete.addAll((List<SObject>)OpportunitiesToDelete);
+      result.ToUpdate.addAll((List<SObject>)OpportunitiesToUpdate);
   
       return result;
     }

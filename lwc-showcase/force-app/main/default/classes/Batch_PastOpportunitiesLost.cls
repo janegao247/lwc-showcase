@@ -21,7 +21,7 @@ public with sharing class Batch_PastOpportunitiesLost implements Database.Batcha
     
         ServiceResult result = cleanupService.execute(scope);
     
-        delete new List<SObject>(result.ToDelete);
+        update new List<SObject>(result.ToUpdate);
       }
     
       public void finish(Database.BatchableContext context) {
