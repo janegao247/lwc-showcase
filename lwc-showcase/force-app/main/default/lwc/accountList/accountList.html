@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Financial Services Account Listing" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small"
+                label="Search Account Name">
+            </lightning-input>
+            <div style="height: 800px;">
+                <lightning-datatable key-field="id" data={data} show-row-number-column row-number-offset={rowOffset}
+                    suppress-bottom-bar columns={columns} default-sort-direction={defaultSortDirection}
+                    sorted-direction={sortDirection} sorted-by={sortedBy} onsort={onHandleSort}>>
+                </lightning-datatable>
+            </div>
+        </div>
+    </lightning-card>
+</template>
