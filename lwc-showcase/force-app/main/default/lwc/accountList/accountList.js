@@ -1,6 +1,6 @@
 import { LightningElement, wire } from 'lwc';
-import GetFinancialAccount from "@salesforce/apex/AccountController.GetFinancialAccount";
-import GetAccountsWithNameLike from "@salesforce/apex/AccountController.GetAccountsWithNameLike";
+import { refreshApex } from "@salesforce/apex";
+import GetFinancialAccountsWithNameLike from "@salesforce/apex/AccountController.GetFinancialAccountsWithNameLike";
 
 
 const columns = [
@@ -21,30 +21,22 @@ export default class AccountList extends LightningElement {
     sortDirection = 'asc';
     sortedBy;
 
-    @wire(GetFinancialAccount)
-    wiredAccts({ error, data }) {
-        if (data) {
-            this.data = data;
-            // let baseUrl = 'https://' + location.host + '/';
+    connectedCallback() {
+        this.handleGetAccounts();
+    }
 
-            // data.forEach(acctRec => {
-            //     // acctRec.AccountUrl = baseUrl + acctRec.Id;
-            // });
-        } else if (error) {
-            this.data = undefined;
-        }
+    handleGetAccounts(searchKey) {
+        GetFinancialAccountsWithNameLike({ searchKey })
+            .then(result => {
+                this.data = result;
+            })
+            .catch(error => {
+            });
     }
 
     handleKeyChange(event) {
         const searchKey = event.target.value;
-        if (searchKey) {
-            GetAccountsWithNameLike({ searchKey })
-                .then(result => {
-                    this.data = result;
-                })
-                .catch(error => {
-                });
-        }
+        this.handleGetAccounts(searchKey);
     }
 
     sortBy(field, reverse, primer) {
