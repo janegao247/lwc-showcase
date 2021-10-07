@@ -5,7 +5,7 @@
                 label="Search Account Name">
             </lightning-input>
             <div style="height: 800px;">
-                <lightning-datatable key-field="id" data={data} show-row-number-column row-number-offset={rowOffset}
+                <lightning-datatable key-field="id" data={lstAllRows} show-row-number-column row-number-offset={rowOffset}
                     suppress-bottom-bar columns={columns} default-sort-direction={defaultSortDirection}
                     sorted-direction={sortDirection} sorted-by={sortedBy} onsort={onHandleSort}>>
                 </lightning-datatable>
